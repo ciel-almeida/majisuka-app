@@ -1,0 +1,42 @@
+.mb-list {
+	width: 90%;
+	margin: 2rem auto;
+	border-radius: 15px;
+	background-color: rgb(213, 208, 208);
+	padding: 4rem;
+}
+
+.mb-list__title {
+	font-size: 2.6rem;
+	margin-bottom: 1rem;
+	color: rgb(116, 7, 116);
+}
+
+.mb-list__buttons-wrapper {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+.mb-list__btn {
+	color: rgba(5, 5, 5, 0.769);
+	font-weight: lighter;
+	padding: 0.8rem 2rem;
+	font-size: 1.1rem;
+	border-radius: 6px;
+	border: 0.4px solid rgba(117, 117, 117, 0.702);
+	box-shadow: 0.5px 0.5px 1px rgba(98, 98, 98, 0.675);
+	outline: none;
+	margin: 0 0.2rem;
+	cursor: pointer;
+}
+
+.mb-list__btn:hover {
+	filter: invert(0.07);
+}
+
+.mb-list__btn--active,
+.mb-list__btn:active {
+	color: white;
+	background-color: rgb(89, 175, 255);
+}

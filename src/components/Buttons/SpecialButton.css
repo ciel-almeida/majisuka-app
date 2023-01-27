@@ -1,0 +1,11 @@
+.btn__special {
+	font-size: 1.4rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 35px;
+	background-color: #eaefe5;
+	cursor: pointer;
+	position: absolute;
+	right: 10%;
+	top: 50%;
+	transform: translateY(-50%);
+}

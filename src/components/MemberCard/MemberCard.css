@@ -1,0 +1,77 @@
+.mb-list__item {
+	position: relative;
+	list-style: none;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 1rem;
+
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 0 8px 32px 0 rgba(32, 35, 86, 0.37);
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(5.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.mb-list__item-wrapper {
+	display: flex;
+}
+
+.mb-list__img-container {
+	width: 220px;
+	display: flex;
+}
+
+.mb-list__img {
+	min-width: 200px;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.mb-list__info-container {
+	width: 100%;
+	padding: 1.5rem 2rem;
+	text-align: left;
+}
+
+.mb-list__info-title {
+	font-size: 2.2rem;
+	margin-bottom: 0.8rem;
+	color: rgb(98, 5, 144);
+}
+
+.mb-list__description {
+	font-size: 1.2rem;
+	/* line-break: auto; */
+	color: rgb(40, 39, 39);
+}
+
+.mb-list__btn-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-right: 4px;
+}
+
+.mb-list__card-btn {
+	height: 48%;
+	padding: 0 1rem;
+	border-radius: 6px;
+	border: none;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+.mb-list__card-btn:hover {
+	transform: scale(1.03);
+	filter: brightness(115%);
+	cursor: pointer;
+}
+.mb-list__card-btn--edit {
+	background-color: rgb(128, 175, 240);
+}
+.mb-list__card-btn--delete {
+	background-color: lightcoral;
+}

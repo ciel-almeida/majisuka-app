@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import MemberForm from './components/MemberForm/MemberForm';
+import MembersList from './components/MembersList/MembersList';
+import { MembersProvider } from './contexts/members-context';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isFormActive, setIsFormActive] = useState(false);
+
+	function formHandler() {
+		// e.preventDefault();
+		setIsFormActive(prevState => {
+			return !prevState;
+		});
+	}
+
+	return (
+		<div className="App">
+			<MembersProvider>
+				<Header isFormActive={isFormActive} formHandler={formHandler} />
+				{isFormActive && <MemberForm formHandler={formHandler} />}
+				<MembersList />
+			</MembersProvider>
+		</div>
+	);
 }
 
 export default App;
