@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { MembersContext } from '../../contexts/members-context';
 
 import SpecialButton from '../Buttons/SpecialButton';
-import './Header.css';
+import './MainHeader.css';
 
-function Header(props) {
+function MainHeader(props) {
 	const membersCtx = useContext(MembersContext);
 
 	return (
@@ -15,4 +15,4 @@ function Header(props) {
 	);
 }
 
-export default Header;
+export default MainHeader;

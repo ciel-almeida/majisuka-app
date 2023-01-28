@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Header from './components/Header/Header';
+import MainHeader from './components/MainHeader/MainHeader';
 import MemberForm from './components/MemberForm/MemberForm';
 import MembersList from './components/MembersList/MembersList';
 import { MembersProvider } from './contexts/members-context';
@@ -18,7 +18,7 @@ function App() {
 	return (
 		<div className="App">
 			<MembersProvider>
-				<Header isFormActive={isFormActive} formHandler={formHandler} />
+				<MainHeader isFormActive={isFormActive} formHandler={formHandler} />
 				{isFormActive && <MemberForm formHandler={formHandler} />}
 				<MembersList />
 			</MembersProvider>
